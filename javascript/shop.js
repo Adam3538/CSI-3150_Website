@@ -9,7 +9,7 @@ const data = [
   {
     id: 2,
     name: "Halo Infinite",
-    img: "../media/images/Halo.jpg",
+    img: "../media/images/halo.jpg",
     price: 30,
     plat: "Xbox",
   },
