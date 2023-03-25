@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #14213d;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  box-shadow: 0 5px 10px #fca311;
+}
+
+header .gg {
+  padding: 25px;
+  font-size: 25px;
+  font-weight: 750;
+  color: #e5e5e5;
+  font-style: italic;
+}
+
+header .gg:hover {
+  background-color: #fca311;
+  border-radius: 8px;
+}
+
+header .navbar ul li {
+  list-style: none;
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a:hover {
+  background-color: #fca311;
+  border-radius: 8px;
+}
+
+header .navbar ul li a {
+  font-size: 25px;
+  padding: 25px;
+  color: #e5e5e5;
+  display: block;
+}
+
+body .hero {
+  min-height: 100vh;
+  background-color: #14213d;
+}
+
+body .hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+body .left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 50px;
+  color: #e5e5e5;
+  background-color: #14213d;
+}
+
+body .left-column h1 {
+  justify-content: left;
+  font-size: 65px;
+  font-style: italic;
+}
+
+body .left-column p {
+  line-height: 35px;
+  text-indent: 25px;
+}
+
+body .right-column {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 450px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+}
